@@ -1,0 +1,210 @@
+.company{
+    width: 100%;
+    padding: 45px 0;
+
+}
+.com_slider{
+    width: 80%;
+  
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: block;
+   
+}
+.slider_track{
+display: flex;
+width: calc(150px * 10);
+
+animation: scroll 40s linear infinite  ;
+
+}
+
+.com_slider .slide_com{
+    height: 100px;
+    width: 150px;
+    margin: 15px;
+}
+.slide_com img{
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+@keyframes scroll{
+    0%{
+transform: translatXe(0);
+    }
+    100%{
+        transform: translateX(calc( -150px * 5));
+    }
+} 
+
+.span_dis{
+    text-decoration-color: #0082e6 !important;
+ text-decoration: underline;
+}
+
+
+.home_flex{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.stu_flex{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.box_item{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #006BC2;
+}
+.box_item h1{
+    color: #006BC2;
+    font-weight: 800;
+    font-size: 60px;
+
+}
+.company .card{
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 2px 4px grey;
+    border-bottom: 4px solid #0082e6;
+}
+.company .card h1{
+    color: #006BC2;
+}
+
+.about{
+    width: 100%;
+    padding: 45px 0;
+    position: relative;
+  }
+  .about::after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0;
+  
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url('https://www.mm2h.com/wp-content/uploads/2019/12/dark-blue-blob.png');
+  
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 30%;
+  }
+  .aboutimg{
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+  }
+  .about h2{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .about p{
+    margin: 15px 0;
+    color: #2c3e50;
+    font-size: 20px;
+  }
+  .about ul{
+    list-style-type: none;
+  }
+  .about ul li{
+    
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+  
+  }
+  .about ul li i{
+    margin-right: 15px;
+    color: #0082e6;
+    font-size: 25px;
+  }
+
+ .center_div{
+    width: 90%;
+    display: block;
+    margin: auto;
+  
+ }
+
+ .aboutsec{
+    width: 100%;
+    padding: 100px 0px 35px 0;
+    background-color: #006BC2;
+ }
+ .aboutsec .card{
+    border-radius: 0;
+ }
+
+ .card_im img{
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    margin-top: -60px;
+ }
+ .card_im h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #006BC2;
+ }
+ .dd_flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ @media (min-width:760px) and (max-width:900px) {
+    .card_im img{
+        margin: 0;
+    }
+ }
+
+ .studentlist{
+    width: 100%;
+    padding: 50px 0;
+ }
+
+ .student_item{
+    width: 100%;
+    height: 250px;
+    background-color: #006BC2;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+
+ }
+ .stu_img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+    background-color: #006BC2;
+    border: 7px solid white;
+ }
+ .student_item p{
+  margin-top:-10px ;
+ }
+ .com_img{
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    margin-top: -20px;
+ }

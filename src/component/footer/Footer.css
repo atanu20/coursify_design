@@ -1,0 +1,266 @@
+
+footer{
+    /* position: fixed; */
+    background: #0e1d34;
+    /* background: linear-gradient(rgba(1, 53, 65,0.5),rgba(1, 53, 65,0.5)) ,url('../image/hero-bg.png'); */
+    /* background-color: #233565; */
+    background-image:url('https://kriova.in/image/hero-bg.png') ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 50vh;
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
+  footer ul li a:hover{
+background: transparent !important;
+color: white;
+  }
+  footer a:hover{
+    background: transparent !important;
+color: white;
+  }
+  footer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    height: 1px;
+    width: 100%;
+    background: #AFAFB6;
+  }
+  footer .fot_content{
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+  }
+  footer .fot_content .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    
+  }
+  .fot_content .top .logo-details span{
+    color: #fff;
+    font-size: 30px;
+  }
+  .fot_content .top .logo-details p{
+    font-size: 16px;
+  }
+  .fot_content .top .media-icons{
+    display: flex;
+  }
+  .fot_content .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+  .top .media-icons a:nth-child(1){
+    background: #4267B2;
+  }
+  .top .media-icons a:nth-child(1):hover{
+    color: #4267B2 !important;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(2){
+    background: #1DA1F2;
+  }
+  .top .media-icons a:nth-child(2):hover{
+    color: #1DA1F2 !important;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(3){
+    background: #E1306C;
+  }
+  .top .media-icons a:nth-child(3):hover{
+    color: #E1306C !important;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(4){
+    background: #0077B5;
+  }
+  .top .media-icons a:nth-child(4):hover{
+    color: #0077B5 !important;
+    background: #fff;
+  }
+  .top .media-icons a:nth-child(5){
+    background: #FF0000;
+  }
+  .top .media-icons a:nth-child(5):hover{
+    color: #FF0000 !important;
+    background: #fff;
+  }
+  footer .fot_content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .fot_content .link-boxes .box{
+    width: calc(100% / 5 - 10px);
+  }
+  footer .fot_content .link-boxes .box .link_name{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  footer .link-boxes .box .link_name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 35px;
+    background: #fff;
+  }
+  footer .fot_content .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+  }
+  footer .fot_content .link-boxes .box li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease
+  }
+  footer .fot_content .link-boxes .box li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  footer .fot_content .link-boxes .input-box{
+    margin-right: 55px;
+  }
+  footer .link-boxes .input-box input{
+    height: 40px;
+    width: calc(100% + 55px);
+    outline: none;
+    border: 2px solid #AFAFB6;
+    background: transparent;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  footer .link-boxes .input-box input::placeholder{
+    color: #AFAFB6;
+    font-size: 16px;
+  }
+  footer .link-boxes .input-box input[type="button"]{
+    background: #fff;
+    color: #140B5C;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 4px 0;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  footer .input-box input[type="button"]:hover{
+    opacity: 1;
+  }
+  footer .bottom-details{
+    width: 100%;
+    background: orange;
+  }
+  footer .bottom-details .bottom_text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .bottom-details .bottom_text span,
+  footer .bottom-details .bottom_text a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+  footer .bottom-details .bottom_text a:hover{
+    opacity: 1;
+    text-decoration: underline;
+  }
+  footer .bottom-details .bottom_text a{
+    margin-right: 10px;
+  }
+  @media (max-width: 900px) {
+    footer .fot_content .link-boxes{
+      flex-wrap: wrap;
+    }
+    footer .fot_content .link-boxes .input-box{
+      width: 40%;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 700px){
+    footer{
+      position: relative;
+    }
+    footer .fot_content .top .logo-details{
+      font-size: 26px;
+    }
+    footer .fot_content .top .media-icons a{
+      height: 35px;
+      width: 35px;
+      font-size: 14px;
+      line-height: 35px;
+    }
+    footer .fot_content .link-boxes .box{
+      width: calc(100% / 3 - 10px);
+    }
+    footer .fot_content .link-boxes .input-box{
+      width: 60%;
+    }
+    footer .bottom-details .bottom_text span,
+    footer .bottom-details .bottom_text a{
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 520px){
+    footer::before{
+      top: 145px;
+    }
+    footer .fot_content .top{
+      flex-direction: column;
+    }
+    footer .fot_content .top .media-icons{
+      margin-top: 16px;
+    }
+    footer .fot_content .link-boxes .box{
+      width: calc(100% / 2 - 10px);
+    }
+    footer .fot_content .link-boxes .input-box{
+      width: 100%;
+    }
+  }
+  
+
+  @media (max-width: 858px){
+    footer ul li a{
+        color: white !important;
+    }
+    footer ul li a:hover{
+        background: transparent !important;
+        color: white !important;
+          }
+          footer a:hover{
+            background: transparent !important;
+        color: white !important;
+          }
+  }
